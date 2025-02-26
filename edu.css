@@ -79,6 +79,7 @@
 body {
   color: var(--n-text);
   background-color: var(--n-bg);
+  /*
   font-family: 'Kaushan Script', cursive;
   font-family: 'Arvo', serif;
   font-family: 'Pixelify Sans', sans-serif;
@@ -86,6 +87,7 @@ body {
   font-family: "Inter", serif;
   font-family: "Roboto", serif;
   font-family: "Roboto Mono", serif;
+  */
   font-family: "Ubuntu", serif;
   padding: 0.25rem;
 
@@ -163,7 +165,12 @@ a {font-weight: bold;
 }a:active   {text-decoration: underline;        color: var(--n-link);
 }
 
-math {
+code {
+    background-color: var(--n-code-bg);
+    display: block;
+    color: var(--n-text);
+    font-family: "Space Mono", sans-serif;
+}math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
   margin: 0.5rem;
   padding: 0.25rem;
@@ -199,11 +206,8 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 }
 #p3 {
   color: var(--gray-50-50);
-}code {
-    background-color: var(--n-code-bg);
-    display: block;
-    color: var(--n-text);
 }
+
 
 
 
@@ -213,6 +217,10 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 #inline-block {display: inline-block;}
 
 
+
+
+
+
 /* For <math> */
 #margin10 {
     margin: 0.10rem;
@@ -220,6 +228,17 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 #margin25 {
   margin: 0.25rem;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -246,6 +265,12 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
   padding: 0;
   background-color: var(--red-2);
 }
+
+
+
+
+
+
 
 
 
@@ -355,12 +380,11 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 /* 
  details, summary ---------------------------------------------------------------------------- 
 */
-
 details {
-    padding: 10px;
+    padding: 0;
     margin-bottom: 5px;
     cursor: pointer;
-    background-color: var(--n-menu1);
+    border: var(--n-menu1-border) solid 0.25rem;
   }
   
   summary {
@@ -376,21 +400,22 @@ details {
   summary h1, summary h2, summary h3, summary h4, summary h5, summary h6 {
     margin: 0.5rem;
   }
+  summary {
+    background-color: var(--n-menu1);
+    
+  }
   
   summary::before {
-    content: "\25BA"; 
+    content: "\25A0";
     position: absolute;
     left: 5px;
     transition: transform 250ms ease-in-out;
-    cursor: pointer; 
+    cursor: pointer;
   }
-  
   
   details[open] summary::before {
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
   }
-  
-
 
 
 
