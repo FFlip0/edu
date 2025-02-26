@@ -112,18 +112,18 @@ main {padding: 3rem;}
 */
 
 /* All */
-h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #p4, #themeToggle  {
+h1, h2, h3, h4, h5, h6, p, a, ul, button, code, details, #p2, #p3, #themeToggle  {
   display: flex;
   flex-direction: column;
   cursor: default;
 
 }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #p4, #themeToggle {
+h1, h2, h3, h4, h5, h6, p, a, ul, button, code, details, #p2, #p3, #themeToggle {
   margin: 0.5rem;
   padding: 0.5rem;
 }
-p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul, #p2, #p3, #p4, #themeToggle  {
+p, a, li, b, i, ul, table, h1, h2, h3, h4, h5, h6, button, code, details, #p2, #p3, #themeToggle  {
   display: block;
 }
 
@@ -199,12 +199,10 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 }
 #p3 {
   color: var(--gray-50-50);
-}#p4 {
+}code {
     background-color: var(--n-code-bg);
-    display: inline-block;
+    display: block;
     color: var(--n-text);
-    font-family: "Roboto Mono", serif;
-
 }
 
 
@@ -254,6 +252,11 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 
 
 
+
+
+
+
+
 /* Small devices (0px - 424px) */
 @media (min-width: 0px) {
     h1 { font-size: 2rem; }
@@ -262,7 +265,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.25rem; }
     h5 { font-size: 1.125rem; }
     h6 { font-size: 1rem; }
-    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 0.875rem; }
+    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 0.875rem; }
 }
 
 /* Small devices (425px - 767px) */
@@ -273,7 +276,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.5rem; }
     h5 { font-size: 1.25rem; }
     h6 { font-size: 1.125rem; }
-    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1rem; }
+    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1rem; }
 }
 
 /* Medium devices (768px - 1023px) */
@@ -284,7 +287,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.75rem; }
     h5 { font-size: 1.5rem; }
     h6 { font-size: 1.25rem; }
-    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.125rem; }
+    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1.125rem; }
 }
 
 /* Large devices (1024px and up) */
@@ -295,7 +298,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 2rem; }
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.5rem; }
-    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
+    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
     
     /* Only for 1024px and up */ 
     math {font-size: 2rem;}
@@ -349,12 +352,44 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 
 
 
+/* 
+ details, summary ---------------------------------------------------------------------------- 
+*/
 
-
-
-
-
-
+details {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: var(--n-menu1);
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 1rem;
+    cursor: pointer;
+  }
+  
+  summary h1, summary h2, summary h3, summary h4, summary h5, summary h6 {
+    margin: 0.5rem;
+  }
+  
+  summary::before {
+    content: "\25BA"; 
+    position: absolute;
+    left: 5px;
+    transition: transform 250ms ease-in-out;
+    cursor: pointer; 
+  }
+  
+  
+  details[open] summary::before {
+    transform: rotate(90deg); 
+  }
+  
 
 
 
