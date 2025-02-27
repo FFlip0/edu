@@ -1,23 +1,3 @@
-//  Theme Toggle Old
-/*
-  const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
-    function toggleTheme() {
-    body.classList.toggle('root2');
-    }
-    themeToggle.addEventListener('click', toggleTheme);
-*/
-
-//  Screen Support (with cache saved)
-    function showPopup() {
-        document.getElementById("screenSupport").style.display = "block";
-    }
-    
-    function closePopup() {
-        document.getElementById("screenSupport").style.display = "none";
-    }
-
-
 //Theme Toggle New
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
@@ -34,7 +14,4 @@
     }
 
     themeToggle.addEventListener('click', toggleTheme);
-
-    function closePopup() {
-    document.getElementById("screenSupport").style.display = "none";
-    }
+    

@@ -290,7 +290,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.25rem; }
     h5 { font-size: 1.125rem; }
     h6 { font-size: 1rem; }
-    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 0.875rem; }
+    p, a, button, code, math, li, th, td, li:before { font-size: 0.875rem; }
 }
 
 /* Small devices (425px - 767px) */
@@ -301,7 +301,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.5rem; }
     h5 { font-size: 1.25rem; }
     h6 { font-size: 1.125rem; }
-    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1rem; }
+    p, a, button, code, math, li, th, td, li:before { font-size: 1rem; }
 }
 
 /* Medium devices (768px - 1023px) */
@@ -312,7 +312,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.75rem; }
     h5 { font-size: 1.5rem; }
     h6 { font-size: 1.25rem; }
-    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1.125rem; }
+    p, a, button, code, math, li, th, td, li:before { font-size: 1.125rem; }
 }
 
 /* Large devices (1024px and up) */
@@ -323,7 +323,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 2rem; }
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.5rem; }
-    p, a, button, code, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
+    p, a, button, code, math, li, th, td, li:before { font-size: 1.25rem; }
     
     /* Only for 1024px and up */ 
     math {font-size: 2rem;}
@@ -382,7 +382,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 */
 details {
     padding: 0;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     cursor: pointer;
     border: var(--n-menu1-border) solid 0.25rem;
   }
@@ -393,7 +393,7 @@ details {
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 1rem;
+    /*padding-left: 1rem;*/
     cursor: pointer;
   }
   
@@ -406,9 +406,9 @@ details {
   }
   
   summary::before {
-    content: "\25A0";
+    content: "";
     position: absolute;
-    left: 5px;
+    /*left: 5px;*/
     transition: transform 250ms ease-in-out;
     cursor: pointer;
   }
@@ -519,46 +519,6 @@ table {
 
 
 
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-/* 
- Screen Support ---------------------------------------------------------------------------- 
-*/
-#screenSupport {
-  color: var(--gray-50-50); 
-  font-weight: bold;
-  background-color: var(--n-menu1);
-  padding: 0.25rem;
-  margin: 0.5rem;
-  font-size: 1rem;
-  display: block;
-  text-align: center;
-  border: var(--n-menu1-border) solid 0.25rem;
-  transition: all 200ms;
-
-}#screenSupport::before {
-  content: "screen size compatibility is limited";
-}#screenSupport:hover {
-  background-color: var(--n-menu1-border);
-}@media (min-width: 1024px) {#screenSupport {display: none}}
-.close {
-    color: var(--n-text);
-    cursor: pointer;
-    font-weight: bold;
-}
 
 
 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto TOC Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside id="toc-container">
+    <h2>Table of Contents</h2>
+    <ul id="toc"></ul>
+  </aside>
+
+  <main>
+    <h1>Main Heading</h1>
+    <p>Some content...</p>
+
+    <h2>Subheading 1</h2>
+    <p>More content...</p>
+
+    <h3>Sub-subheading 2</h3>
+    <p>Even more content...</p>
+
+    <h2>Subheading 2</h2>
+    <p>More content...</p>
+  </main>
+  
+  <style>
+    /* styles.css */
+#toc-container {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#toc-container h2 {
+  margin-top: 0;
+}
+
+#toc {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#toc li {
+  margin: 5px 0;
+}
+
+#toc a {
+  text-decoration: none;
+  color: #333;
+}
+
+#toc a:hover {
+  color: #007bff;
+}
+
+/* Show TOC only on screens wider than 1024px */
+@media (min-width: 1024px) {
+  #toc-container {
+    display: block;
+  }
+}
+  </style>
+
+  <script>
+    // script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const tocContainer = document.getElementById("toc");
+  const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+  headings.forEach((heading) => {
+    // Create an ID for the heading if it doesn't have one
+    if (!heading.id) {
+      heading.id = heading.textContent
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+    }
+
+    // Create a list item for the TOC
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = `#${heading.id}`;
+    a.textContent = heading.textContent;
+
+    // Add indentation based on heading level
+    const level = parseInt(heading.tagName.charAt(1));
+    a.style.paddingLeft = `${(level - 1) * 10}px`;
+
+    li.appendChild(a);
+    tocContainer.appendChild(li);
+  });
+});
+    </script>
+</body>
+</html>

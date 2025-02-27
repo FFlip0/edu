@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>commands</title>
+        <title>Commands</title>
         <link rel="icon" href="../icon2.svg" type="image/svg+xml">
         <link rel="stylesheet" href="../edu.css"> 
         <script defer src="../edu.js"></script>
@@ -23,13 +23,11 @@
                 <a id="mobile-back" href="../-cybersecurity.html">back</a>
             </div>
             <div id="themeToggle"></div> 
-            <!--<div id="screenSupport">
-                <span class="close" onclick="closePopup()">&times;</span>
-            </div>-->
+            
 
 
-            <h1>commands</h1>
-            <details><summary><h2>windows</h2></summary>
+            <h1>Commands</h1>
+            <details><summary><h2>windows (windows powershell)</h2></summary>
                 <p>powershell (pwsh)</p>
                 
                 <details><summary><h3>CLI controls</h3></summary>
@@ -56,10 +54,10 @@
                 <!--
                 <details><summary><h3></h3></summary>
                 
-                    <h4>aliases</h4>
-                    <p></p>
+                    <h4>PowerShell Name</h4>
+                    <pre><code></code></pre>
 
-                    <h4>commands</h4>
+                    <h4>Commands</h4>
                     
                         <pre><code></code></pre>
                         <p></p>
@@ -72,12 +70,12 @@
 
                 <br><div id="line1"></div><br>
 
-                <details><summary><h3>dir</h3></summary>
-                
-                    <h4>aliases</h4>
-                    <p>gci, ls, dir</p>
+                <details><summary><h3>dir / gci / ls </h3></summary>
+                    
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Get-ChildItem</code></pre>
 
-                    <h4>commands</h4>
+                    <h4>Commands</h4>
                     
                         <pre><code>dir</code></pre>
                         <p>Lists directory contents.</p>
@@ -89,12 +87,15 @@
                         <p>Lists all directory contents.</p>
 
                 </details>
-                <details><summary><h3>cd</h3></summary>
-                
-                    <h4>aliases</h4>
-                    <p>ls, sl, chdir</p>
 
-                    <h4>commands</h4>
+
+
+                <details><summary><h3>cd / sl / chdir</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Set-Location</code></pre>
+
+                    <h4>Commands</h4>
                         
                         <pre><code>cd [folder path]</code></pre>
                         <p>Changes directory.</p>
@@ -103,19 +104,31 @@
                         <p>Goes back a directory.</p>
 
                 </details>
-                <details><summary><h3>cls</h3></summary>
 
-                    <h4>commands</h4>
+
+
+                <details><summary><h3>cls</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Clear-Host</code></pre>
+
+                    <h4>Commands</h4>
                     
                         <pre><code>cls</code></pre>
                         <p>Clears the terminal.</p>
 
                 </details>
+
+
+
                 <details><summary><h3>code (vscode)</h3></summary>
                 
                     <p>Visual studio code required.</p>
-                    
-                    <h4>commands</h4>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>N/A</code></pre>
+
+                    <h4>Commands</h4>
                     
                         <pre><code>code</code></pre>
                         <p>Opens visual studio code.</p>
@@ -127,9 +140,15 @@
                         <p>Opens visual studio code at the path (folder or file).</p>
 
                 </details>
-                <details><summary><h3>explorer</h3></summary>
 
-                    <h4>commands</h4>
+
+
+                <details><summary><h3>explorer</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>N/A</code></pre>
+
+                    <h4>Commands</h4>
                     
                     <pre><code>explorer</code></pre>
                     <p>Opens the explorer.</p>
@@ -144,39 +163,85 @@
                     <p>Opens a website.</p>
 
                 </details>
-                <details><summary><h3>man</h3></summary>
-                
-                    <h4>aliases</h4>
-                    <p>Get-Help, </p>
-                    
-                    <h4>commands</h4>
-                    
-                        <pre><code>code</code></pre>
-                        <p>Opens visual studio code.</p>
-                    
-                        <pre><code>code .</code></pre>
-                        <p>Opens visual studio code at the current directory.</p>
 
-                        <pre><code>code [path]</code></pre>
-                        <p>Opens visual studio code at the path (folder or file).</p>
+
+
+                <details><summary><h3>h / history</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Get-History</code></pre>
+
+                    <h4>Commands</h4>
+                    
+                        <pre><code>h</code></pre>
+                        <p>Display history of commands in the current session.</p>
 
                 </details>
+
+
+
+                <details><summary><h3>man</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Get-Help</code></pre>
+
+                    <h4>Commands</h4>
+                    
+                        <pre><code>man [command]</code></pre>
+                        <p>Opens manual page for the command.</p>
+
+                </details>
+
+
+
                 <details><summary><h3>shutdown</h3></summary>
                 
-                    <h4>aliases</h4>
-                    <p>Stop-Computer</p>
+                    <h4>PowerShell Name</h4>
+                    <pre><code>N/A</code></pre>
 
-                    <h4>commands</h4>
+                    <h4>Commands</h4>
                     
                         <pre><code>shutdown -force</code></pre>
                         <p>Instant computer shutdown.</p>
+
+                </details>
+
+
+
+                <details><summary><h3>start</h3></summary>
+                
+                    <h4>PowerShell Name</h4>
+                    <pre><code>Start-Process</code></pre>
+
+                    <h4>Commands</h4>
+                    
+                        <pre><code>start [FilePath]</code></pre>
+                        <p>Starts local application.</p>
+
+                        <pre><code>start .</code></pre>
+                        <p>Opens file explorer to currently opened directory.</p>
+
+                </details>
+
+
+
+                <details><summary><h3>tree</h3></summary>
+                
+                    
+                    <h4>PowerShell Name</h4>
+                    <pre><code></code></pre>
+
+                    <h4>Commands</h4>
+                    
+                        <pre><code>tree</code></pre>
+                        <p>Displays the folder structure of a directory in a visual, tree-like format.</p>
 
                 </details>
             </details>
 
 
             <!--
-            <h1>commands</h1>
+            <h1>Commands</h1>
                 <h2>windows</h2>
 
                 
@@ -356,7 +421,7 @@
                     <h3>Other</h3>
                         
                         <pre><code>&</code></pre>
-                        <p>Runs two commands sequentially.</p>
+                        <p>Runs two Commands sequentially.</p>
                         
                         <pre><code>&&</code></pre>
                         <p>Runs the second command only if the first command succeeds.</p>
@@ -429,7 +494,7 @@
                         <p>Displays host name</p>
                         
                         <pre><code>uname</code></pre>
-                        <p>Linux. (Sub commands required)</p>
+                        <p>Linux. (Sub Commands required)</p>
                         
                         <pre><code>ifconfig</code></pre>
                         <p>“network stuff”</p>
@@ -458,7 +523,7 @@
                         <pre><code>[cmd] -h</code> or <code>[cmd] --help</code></pre>
                         
                         <pre><code>apropos [keyword]</code></pre>
-                        <p>Searches commands via keyword.</p>
+                        <p>Searches Commands via keyword.</p>
                         
                         <pre><code>chsh -s /bin/bash</code></pre>
                         <p>Changes shell to bash</p>
