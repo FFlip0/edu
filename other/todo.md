@@ -8,3 +8,5 @@
 | cybersecurity\commands | basic windows pwsh commands |
 | edu | fix img system somehow |
 | english\techniques | actually do the techniques | 
+
+- table of contents

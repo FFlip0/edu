@@ -471,34 +471,26 @@ table {
 /* 
  Images ---------------------------------------------------------------------------- 
 */
-#img1, #img2, #img3, #img4 {
+
+#figmaFig,  #img3, #img4 {
   background-color: var(--n-bg);
   padding: 2rem;
   margin: 1rem;
-  border: #ffffff solid 0.25rem;
+  border: var(--n-menu1-border) solid 0.5rem;
+  background-color: var(--n-bg);
   
   /* For making the width 80% when the width of 
   a image is larger than the width of the screen */
   max-width: 80%;  
   margin-right: auto;
-}#img2 /* invert + yes padding */ { 
-  filter: invert();
-  background-color: #ffffff;
-  border: #000000 solid 0.25rem;
-}#img3 /* invert + no padding */ { 
-  background-color: #ffffff;
-  padding: 0;
-  border: #000000 solid 0.25rem;
-  filter: invert();
 }#img4 /* no invert + yes padding */ { 
   background-color: #000000;
-  border: #ffffff solid 0.25rem;
 }
 #img5 {
   background-color: var(--n-bg);
   padding: 0rem;
   margin: 1rem;
-  border: #ffffff solid 0.25rem;
+  border: #ffffff solid 0.5rem;
     
   /* For making the width 80% when the width of 
   a image is larger than the width of the screen */
@@ -506,6 +498,18 @@ table {
   margin-right: auto;
 }
   
+#img1 {
+    background-color: var(--n-bg);
+
+    margin: 1rem;
+    border: var(--n-menu1-border) solid 0.5rem;
+    background-color: var(--n-bg);
+    
+    /* For making the width 80% when the width of 
+    a image is larger than the width of the screen */
+    max-width: 80%;  
+    margin-right: auto;
+}
 
 
 
