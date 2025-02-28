@@ -315,7 +315,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     p, a, button, code, math, li, th, td, li:before { font-size: 1.125rem; }
 }
 
-/* Large devices (1024px and up) */
+/* Large devices (1024px and 1439px+) */
 @media (min-width: 1024px) {
     h1 { font-size: 3rem; }
     h2 { font-size: 2.5rem; }
@@ -472,28 +472,35 @@ table {
  Images ---------------------------------------------------------------------------- 
 */
 
-#figmaFig,  #img3, #img4 {
+/*
+Here's the breakdown of 3/4, 1/2, and 1/4 for each of those pixel values:
+
+* **1439px:**
+    * 3/4 = 1079.25px
+    * 1/2 = 719.50px
+    * 1/4 = 359.75px
+* **1023px:**
+    * 3/4 = 767.25px
+    * 1/2 = 511.50px
+    * 1/4 = 255.75px
+* **767px:**
+    * 3/4 = 575.25px
+    * 1/2 = 383.50px
+    * 1/4 = 191.75px
+* **424px:**
+    * 3/4 = 318.00px
+    * 1/2 = 212.00px
+    * 1/4 = 106.00px
+
+*/
+
+#figmaFig {
   background-color: var(--n-bg);
   padding: 2rem;
   margin: 1rem;
   border: var(--n-menu1-border) solid 0.5rem;
   background-color: var(--n-bg);
   
-  /* For making the width 80% when the width of 
-  a image is larger than the width of the screen */
-  max-width: 80%;  
-  margin-right: auto;
-}#img4 /* no invert + yes padding */ { 
-  background-color: #000000;
-}
-#img5 {
-  background-color: var(--n-bg);
-  padding: 0rem;
-  margin: 1rem;
-  border: #ffffff solid 0.5rem;
-    
-  /* For making the width 80% when the width of 
-  a image is larger than the width of the screen */
   max-width: 80%;  
   margin-right: auto;
 }
@@ -505,8 +512,6 @@ table {
     border: var(--n-menu1-border) solid 0.5rem;
     background-color: var(--n-bg);
     
-    /* For making the width 80% when the width of 
-    a image is larger than the width of the screen */
     max-width: 80%;  
     margin-right: auto;
 }
