@@ -530,7 +530,9 @@ table {
 
 
 
-/*-----*/
+/* 
+ Image Preview ---------------------------------------------------------------------------- 
+*/
 #overlay {
     position: fixed;
     top: 0;
@@ -628,3 +630,7 @@ table {
 
 
 
+#-randomNotice::before {
+    content: "These are random things that I'm not bothered to categorize yet.";
+    font-style: italic;
+}
