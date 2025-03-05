@@ -134,24 +134,27 @@ p, a, li, b, i, ul, table, h1, h2, h3, h4, h5, h6, button, code, details, #p2, #
 
 
 /* Lists */
-#li1::before {
+li::before {
+    content: "\2022\00A0";
+    margin-left: 0rem;
+}#li1::before {
     content: "\2022\00A0";
     margin-left: 0rem;
 }#li2::before {
-    content: "\26AC\00A0";
-    margin-left: 1rem;
+    content: "\2022\00A0";
+    margin-left: 1.5rem;
 }#li3::before {
-    content: "\2043\00A0";
-    margin-left: 2rem;
-}#li4::before {
     content: "\2022\00A0";
     margin-left: 3rem;
+}#li4::before {
+    content: "\2022\00A0";
+    margin-left: 4.5rem;
 }#li5::before {
-    content: "\26AC\00A0";
-    margin-left: 4rem;
+    content: "\2022\00A0";
+    margin-left: 6rem;
 }#li6::before {
-    content: "\2043\00A0";
-    margin-left: 5rem;
+    content: "\2022\00A0";
+    margin-left: 7.5rem;
 }
 
 
@@ -634,3 +637,6 @@ table {
     content: "These are random things that I'm not bothered to categorize yet.";
     font-style: italic;
 }
+
+#secretLink {opacity: 0;}
+#secretLink:hover {opacity: 0.5;}
