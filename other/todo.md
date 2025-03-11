@@ -9,3 +9,4 @@
 | english\techniques | actually do the techniques | 
 
 - table of contents
+- image highlight not working
