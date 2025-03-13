@@ -1,4 +1,4 @@
-//Theme Toggle New
+//Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
     const themeKey = 'theme'; 
@@ -15,22 +15,5 @@
 
     themeToggle.addEventListener('click', toggleTheme);
     
+// Image Focus
 
-// ------------------------------------------------------------------------------- //
-
-
-
-    const images = document.querySelectorAll('img'); // Selects all img tags
-    const overlay = document.getElementById('overlay');
-    const focusedImg = document.getElementById('focusedImg');
-
-    images.forEach(img => {
-    img.addEventListener('click', () => {
-        focusedImg.src = img.src;
-        overlay.style.display = 'flex'; // Show the overlay
-    });
-    });
-
-    overlay.addEventListener('click', () => {
-    overlay.style.display = 'none'; // Hide the overlay when clicked
-    });
