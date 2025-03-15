@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+
+<svg
+   width="295.5"
+   height="136.9"
+   version="1.1"
+   style="font-family:'Comic Sans MS'; font-size:40px; stroke-width:3.2;"
+   id="svg24447"
+   sodipodi:docname="variable-constant.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview24449"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.5722366"
+     inkscape:cx="208.57335"
+     inkscape:cy="88.055663"
+     inkscape:window-width="1422"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24447" />
+  <defs
+     id="defs24411">
+    <marker
+       id="aa1"
+       style="overflow:visible"
+       orient="auto">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="stroke:#000000;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24408" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       id="aa12875"
+       inkscape:stockid="aa12875">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#005c94;fill-opacity:1;stroke:#005c94;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24626" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       id="aa12763"
+       inkscape:stockid="aa12763">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#005c94;fill-opacity:1;stroke:#005c94;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24629" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       id="aa12611"
+       inkscape:stockid="aa12611">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#005c94;fill-opacity:1;stroke:#005c94;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24632" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       id="aa13103"
+       inkscape:stockid="aa13103">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#005c94;fill-opacity:1;stroke:#005c94;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24635" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       id="aa11040"
+       inkscape:stockid="aa11040">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#005c94;fill-opacity:1;stroke:#005c94;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path24638" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       inkscape:stockid="aa131039968"
+       id="aa131039968">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#0000fe;fill-opacity:1.0;stroke:#0000fe;stroke-width:1pt;stroke-opacity:1.0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30515" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       inkscape:stockid="aa110408004"
+       id="aa110408004">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#0000fe;fill-opacity:1.0;stroke:#0000fe;stroke-width:1pt;stroke-opacity:1.0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30518" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       inkscape:stockid="aa12611954"
+       id="aa12611954">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#729fcf;fill-opacity:1.0;stroke:#729fcf;stroke-width:1pt;stroke-opacity:1.0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30521" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       inkscape:stockid="aa127639487"
+       id="aa127639487">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#8f5902;fill-opacity:1.0;stroke:#8f5902;stroke-width:1pt;stroke-opacity:1.0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30524" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       orient="auto"
+       inkscape:stockid="aa128755524"
+       id="aa128755524">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#c4a000;fill-opacity:1;stroke:#c4a000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path30527" />
+    </marker>
+  </defs>
+  <text
+     x="91.26181"
+     y="80.803024"
+     style="fill:#c4a000;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24413">4</text>
+  <text
+     x="119.96181"
+     y="80.803024"
+     style="fill:#8f5902;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24415">x</text>
+  <text
+     x="154.1618"
+     y="80.803024"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#729fcf"
+     id="text24417">−</text>
+  <text
+     x="189.1618"
+     y="80.803024"
+     style="fill:#0000fe;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24419">7</text>
+  <text
+     x="229.6618"
+     y="80.803024"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS';fill:#62a0ea;stroke-dasharray:12.8, 12.8"
+     id="text24421">=</text>
+  <text
+     x="272.96182"
+     y="80.803024"
+     style="fill:#0000fe;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24423">5</text>
+  <text
+     x="-0.8381961"
+     y="14.103046"
+     style="font-size:18px;fill:#c4a000;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24425">Coefficient</text>
+  <text
+     x="131.1618"
+     y="14.103046"
+     style="font-size:18px;fill:#8f5902;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24427">Variable</text>
+  <text
+     x="69.461807"
+     y="131.80302"
+     style="font-size:18px;fill:#729fcf;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24429">Operator</text>
+  <text
+     x="198.6618"
+     y="131.80302"
+     style="font-size:18px;fill:#0000ff;stroke-dasharray:12.8, 12.8;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24431">Constants</text>
+  <path
+     style="fill:none;stroke:#c4a000;stroke-width:0.95;marker-end:url(#aa128755524);stroke-dasharray:none"
+     d="m 65.96181,22.60304 24.7,26.6"
+     id="path24433" />
+  <path
+     style="fill:none;stroke:#8f5902;stroke-width:0.95;marker-end:url(#aa127639487);stroke-dasharray:none"
+     d="m 164.86181,21.60304 -20.4,29.8"
+     id="path24435" />
+  <path
+     style="fill:none;stroke:#729fcf;stroke-width:0.95;marker-end:url(#aa12611954);stroke-dasharray:none"
+     d="m 138.96181,116.40304 20.8,-33.8"
+     id="path24437" />
+  <path
+     style="fill:none;stroke:#0000fe;stroke-width:0.95;marker-end:url(#aa131039968);stroke-dasharray:none"
+     d="m 236.26181,115.50304 -26.3,-31.1"
+     id="path24439" />
+  <path
+     style="fill:none;stroke:#0000fe;stroke-width:0.95;marker-end:url(#aa110408004);stroke-dasharray:none"
+     d="m 259.46181,115.10304 16.9,-27.1"
+     id="path24441" />
+  <text
+     x="118.76181"
+     y="80.803024"
+     style="fill:#8f5902;-inkscape-font-specification:'Trebuchet MS';font-family:'Trebuchet MS';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="text24443">x</text>
+</svg>

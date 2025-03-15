@@ -155,7 +155,6 @@ h1::before { content: "\2759";}
 
 
 
-
 code {
     background-color: var(--n-code-bg);
     display: block;
@@ -204,6 +203,8 @@ math {
     display: inline-block;
     font-family: "Times New Roman", Times, serif;
     background-color: var(--n-menu1);
+    border: 0.25rem solid var(--n-menu1-border);
+    border-radius:  0.25rem;
     padding: 0.25rem;
     margin: 0;
 }
@@ -264,19 +265,26 @@ math {
 
 
 
-/* border3 is just */
+
+
+
+
+
+
+
+/* border1 is block */
+/* border2 is inline*/
+/* border3 is a red version of border1 */
 #border1, #border2, #border3 {
   border: var(--gray-50-50) dashed 0.1rem;
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem;
 
   display: block;
 }#border2 {
   display: inline-block;
 }#border3 {
   border: var(--red) dashed 0.1rem;
-  margin: 0.5;
-  padding: 0;
   background-color: var(--red-2);
 }
 
@@ -296,7 +304,17 @@ math {
 
 
 
-
+#box1 {
+    border-radius: 0.25rem;
+    background-color: var(--n-menu1);
+    border: 0.25rem solid var(--n-menu1-border);
+    padding: 0.25rem;
+    margin: 0.5rem;
+}#box2 {
+    border-radius: 0.25rem;
+    display: block;
+    background-color: var(--n-menu1-hover);
+}
 
 
 
@@ -361,7 +379,10 @@ details {
 }summary::before {
     content: "";
     cursor: pointer;
+}summary h1, summary h2, summary h3, summary h4, summary h5, summary h6 {
+    cursor: pointer;
 }
+
 
 
 
@@ -431,37 +452,25 @@ table {
  Images ---------------------------------------------------------------------------- 
 */
 
-#figmaFig {
+#svgs {
   background-color: var(--n-bg);
   padding: 2rem;
   margin: 1rem;
   border: var(--n-menu1-border) solid 0.5rem;
   background-color: var(--n-bg);
-  
   max-width: 80%;  
   margin-right: auto;
-}
-  
-
-#img1-100, #img1-90, #img1-75, #img1-50, #img1-25 {
+}#img1-100, #img1-90, #img1-75, #img1-50, #img1-25 {
     background-color: var(--n-bg);
-
     margin: 1rem;
     border: var(--n-menu1-border) solid 0.5rem;
     background-color: var(--n-bg);
-}
+}#img1-100 {width: 100%;}
+#img1-90 {width: 90%;}
+#img1-75 {width: 75%;}
+#img1-50 {width: 50%;}
+#img1-25 {width: 25%;}
 
-#img1-100 {
-    width: 100%;
-}#img1-90 {
-    width: 90%;
-}#img1-75 {
-    width: 75%;
-}#img1-50 {
-    width: 50%;
-}#img1-25 {
-    width: 25%;
-}
 
 
 
@@ -480,7 +489,10 @@ table {
 /* 
  Image Preview ---------------------------------------------------------------------------- 
 */
-/*
+
+
+
+
 #overlay {
     position: fixed;
     top: 0;
@@ -497,32 +509,6 @@ table {
     max-height: 90%;
     transition: transform 0.3s ease;
 }
-*/
-
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  #focusedImg {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-  }
-  
-  #overlay.active {
-    display: flex;
-  }
-
-
 
 
 
@@ -634,6 +620,12 @@ table {
   border: var(--n-bg) 0.25rem solid;
 }
 
+@media (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
 
 
 
