@@ -110,29 +110,7 @@ p, a, li, b, i {
 
 
 
-/* Lists */
-li::before {
-    content: "\2022\00A0";
-    margin-left: 0rem;
-}#li1::before {
-    content: "\2022\00A0";
-    margin-left: 0rem;
-}#li2::before {
-    content: "\2022\00A0";
-    margin-left: 1.5rem;
-}#li3::before {
-    content: "\2022\00A0";
-    margin-left: 3rem;
-}#li4::before {
-    content: "\2022\00A0";
-    margin-left: 4.5rem;
-}#li5::before {
-    content: "\2022\00A0";
-    margin-left: 6rem;
-}#li6::before {
-    content: "\2022\00A0";
-    margin-left: 7.5rem;
-}
+
 
 
 
@@ -199,7 +177,33 @@ math {
 
 
 
-
+/* Lists */
+#ul2 {
+    margin: 0;
+    padding: 0;
+}
+li::before {
+    content: "\2022\00A0";
+    margin-left: 0rem;
+}#li1::before {
+    content: "\2022\00A0";
+    margin-left: 0rem;
+}#li2::before {
+    content: "\2022\00A0";
+    margin-left: 1.5rem;
+}#li3::before {
+    content: "\2022\00A0";
+    margin-left: 3rem;
+}#li4::before {
+    content: "\2022\00A0";
+    margin-left: 4.5rem;
+}#li5::before {
+    content: "\2022\00A0";
+    margin-left: 6rem;
+}#li6::before {
+    content: "\2022\00A0";
+    margin-left: 7.5rem;
+}
 
 
 /* Paragraph(s) */
@@ -212,7 +216,11 @@ math {
 }
 #p3 {
     color: var(--gray-50-50);
+    display: inline-block;
+    padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;
 }
+
+
 
 
 
