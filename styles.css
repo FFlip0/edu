@@ -6,11 +6,11 @@
 /* Icon: Material Symbols Outlined     */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 /* 
-    min: #000000
-    Q1: #030303
-    Q2: #070707/#080808
-    Q3: #0d0d0d
-    max: #0f0f0f 
+min: #000000
+Q1: #030303
+Q2: #070707/#080808
+Q3: #0d0d0d
+max: #0f0f0f 
 */
 :root {
   --gray-50-50: #808080; /* 50% white, 50% black */
@@ -29,6 +29,7 @@
   --n-menu1-border: #303030;
   --n-menu1-hover: #313131;
   --n-code-bg: #202020;
+  --trueGray: #808080; /* Exact between #000000 and #ffffff */
   --gray0-min: #000000;
   --gray0-Q1: #030303;
   --gray0-Q2: #070707;
@@ -111,6 +112,10 @@
   --grayF-max: #ffffff;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: var(--n-text);
   background-color: var(--gray1-min);
@@ -132,39 +137,32 @@ body {
   background-color: var(--gray1-min);
   border: solid 0.25rem var(--gray1-max);
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 #Box2 {
   background-color: var(--gray2-min);
   border: solid 0.25rem var(--gray2-max);
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 #Box3 {
   background-color: var(--gray3-min);
   border: solid 0.25rem var(--gray3-max);
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 /* 
- Default Styles ---------------------------------------------------------------------------- 
+Default Styles ---------------------------------------------------------------------------- 
 */
 /* All */
-h1, h2, h3, h4, h5, h6, p, a, ul, button, code, details, #p2, #p3, #themeToggle {
-  display: flex;
-  flex-direction: column;
-  cursor: default;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, ul, button, code, details, #p2, #p3, #themeToggle {
+h1, h2, h3, h4, h5, h6, details, p, a, code, math, ul, li, table, tr, th, td, div#Box1, div#Box2, div#Box3, div#border1, div#border2, div#border3, img {
   margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-p, a, li, b, i, ul, table, h1, h2, h3, h4, h5, h6, button, code, details, #p2, #p3, #themeToggle {
+  padding: 1rem;
+} /*Excluded: hr, */
+h1, h2, h3, h4, h5, h6, details {
   display: block;
 }
 
@@ -250,15 +248,11 @@ code {
 /* Math */
 math {
   font-family: "Times New Roman", Times, serif;
-  padding: 0.25rem;
-  margin-left: 0.75rem;
   /* margin and/or padding on left should always add up to 1rem*/
 }
 
 #mathBox {
   display: block;
-  margin: 0;
-  padding: 0;
 }
 
 /* Lists */
@@ -304,14 +298,6 @@ li::before {
 
 /* Paragraph(s) */
 #p2 {
-  background-color: var(--n-text);
-  display: inline-block;
-  color: var(--n-bg);
-  font-style: normal;
-  border: var(--n-bg) solid 0.1rem;
-}
-
-#p3 {
   color: var(--gray-50-50);
   display: inline-block;
   padding-top: 0;
@@ -332,9 +318,10 @@ li::before {
 
 /* Anchor(s) */
 #a2 {
-  display: inline-block;
+  display: block;
   margin: 0.25rem;
   margin-left: 0.5rem;
+  padding: 0.25rem;
 }
 
 #block {
@@ -406,11 +393,12 @@ li::before {
 }
 
 /* 
- Mobile-back, Dir-search ---------------------------------------------------------------------------- 
+Mobile-back, Dir-search ---------------------------------------------------------------------------- 
 */
 #mobile-back {
   font-weight: bold;
   font-style: normal;
+  margin-left: 1rem;
 }
 
 #dir-search {
@@ -441,28 +429,66 @@ li::before {
   }
 }
 /* 
- details, summary ---------------------------------------------------------------------------- 
+details, summary ---------------------------------------------------------------------------- 
 */
 details {
   padding: 0;
   cursor: pointer;
-  border: var(--gray3-max) solid 0.25rem;
+  border-left: var(--grayF-max) solid 0.25rem;
+  margin: 1rem;
+  padding: 0rem;
+  border-radius: 0rem;
 }
 
 summary {
-  background-color: var(--gray3-min);
-  border: solid 0.25rem var(--gray3-max);
+  background-color: var(--gray2-min);
+  border: solid 0.25rem var(--gray2-max);
   cursor: pointer;
-  display: flex;
+  border-radius: 0rem;
 }
 
-summary h1, summary h2, summary h3, summary h4, summary h5, summary h6 {
-  margin: 0.5rem;
-  cursor: pointer;
+summary:hover {
+  background-color: var(--gray2-max);
+}
+
+#detailsContent {
+  margin-left: 1rem;
+}
+
+/*Details Left Border Colors. Full Colors*/ /*details:nth-of-type(1)  { border-left: 0.25rem solid red;}details:nth-of-type(2)  { border-left: 0.25rem solid blue;}details:nth-of-type(3)  { border-left: 0.25rem solid green;}details:nth-of-type(4)  { border-left: 0.25rem solid yellow;}details:nth-of-type(5)  { border-left: 0.25rem solid purple;}details:nth-of-type(6)  { border-left: 0.25rem solid orange;}details:nth-of-type(7)  { border-left: 0.25rem solid cyan;}details:nth-of-type(8)  { border-left: 0.25rem solid magenta;}details:nth-of-type(9)  { border-left: 0.25rem solid lime;}details:nth-of-type(10) { border-left: 0.25rem solid teal;}details:nth-of-type(11) { border-left: 0.25rem solid maroon;}details:nth-of-type(12) { border-left: 0.25rem solid olive;}details:nth-of-type(13) { border-left: 0.25rem solid navy;}details:nth-of-type(14) { border-left: 0.25rem solid silver;}details:nth-of-type(15) { border-left: 0.25rem solid gold;}details:nth-of-type(16) { border-left: 0.25rem solid darkred;}details:nth-of-type(17) { border-left: 0.25rem solid darkblue;}details:nth-of-type(18) { border-left: 0.25rem solid darkgreen;}details:nth-of-type(19) { border-left: 0.25rem solid darkorange;}details:nth-of-type(20) { border-left: 0.25rem solid darkcyan;}details:nth-of-type(21) { border-left: 0.25rem solid darkmagenta;}details:nth-of-type(22) { border-left: 0.25rem solid darkkhaki;}details:nth-of-type(23) { border-left: 0.25rem solid darkslategray;}details:nth-of-type(24) { border-left: 0.25rem solid darkviolet;}details:nth-of-type(25) { border-left: 0.25rem solid firebrick;}details:nth-of-type(26) { border-left: 0.25rem solid forestgreen;}details:nth-of-type(27) { border-left: 0.25rem solid mediumpurple;}details:nth-of-type(28) { border-left: 0.25rem solid mediumseagreen;}details:nth-of-type(29) { border-left: 0.25rem solid mediumslateblue;}details:nth-of-type(30) { border-left: 0.25rem solid midnightblue;}details:nth-of-type(31) { border-left: 0.25rem solid peru;}details:nth-of-type(32) { border-left: 0.25rem solid seagreen;}details:nth-of-type(33) { border-left: 0.25rem solid sienna;}details:nth-of-type(34) { border-left: 0.25rem solid springgreen;}details:nth-of-type(35) { border-left: 0.25rem solid steelblue;}details:nth-of-type(36) { border-left: 0.25rem solid tan;}details:nth-of-type(37) { border-left: 0.25rem solid thistle;}details:nth-of-type(38) { border-left: 0.25rem solid tomato;}details:nth-of-type(39) { border-left: 0.25rem solid violet;}details:nth-of-type(40) { border-left: 0.25rem solid wheat;}details:nth-of-type(41) { border-left: 0.25rem solid yellowgreen;}details:nth-of-type(42) { border-left: 0.25rem solid lightcoral;}details:nth-of-type(43) { border-left: 0.25rem solid lightseagreen;}details:nth-of-type(44) { border-left: 0.25rem solid lightskyblue;}details:nth-of-type(45) { border-left: 0.25rem solid lightsteelblue;}details:nth-of-type(46) { border-left: 0.25rem solid mediumturquoise;}details:nth-of-type(47) { border-left: 0.25rem solid palevioletred;}details:nth-of-type(48) { border-left: 0.25rem solid powderblue;}details:nth-of-type(49) { border-left: 0.25rem solid rosybrown;}details:nth-of-type(50) { border-left: 0.25rem solid royalblue; }
+
+
+/*Details Left Border Colors. AI-Generated Vibrant Colors*/ /*details:nth-of-type(1)  { border-left: 0.25rem solid #FF5733; }details:nth-of-type(2)  { border-left: 0.25rem solid #3366FF; }details:nth-of-type(3)  { border-left: 0.25rem solid #2ECC71; }details:nth-of-type(4)  { border-left: 0.25rem solid #FFC300; }details:nth-of-type(5)  { border-left: 0.25rem solid #9B59B6; }details:nth-of-type(6)  { border-left: 0.25rem solid #E74C3C; }details:nth-of-type(7)  { border-left: 0.25rem solid #1ABC9C; }details:nth-of-type(8)  { border-left: 0.25rem solid #F39C12; }details:nth-of-type(9)  { border-left: 0.25rem solid #3498DB; }details:nth-of-type(10) { border-left: 0.25rem solid #27AE60; }details:nth-of-type(11) { border-left: 0.25rem solid #D35400; }details:nth-of-type(12) { border-left: 0.25rem solid #8E44AD; }details:nth-of-type(13) { border-left: 0.25rem solid #C0392B; }details:nth-of-type(14) { border-left: 0.25rem solid #16A085; }details:nth-of-type(15) { border-left: 0.25rem solid #F1C40F; }details:nth-of-type(16) { border-left: 0.25rem solid #2980B9; }details:nth-of-type(17) { border-left: 0.25rem solid #28B463; }details:nth-of-type(18) { border-left: 0.25rem solid #E67E22; }details:nth-of-type(19) { border-left: 0.25rem solid #884EA0; }details:nth-of-type(20) { border-left: 0.25rem solid #A93226; }details:nth-of-type(21) { border-left: 0.25rem solid #82E0AA; }details:nth-of-type(22) { border-left: 0.25rem solid #EB984E; }details:nth-of-type(23) { border-left: 0.25rem solid #5DADE2; }details:nth-of-type(24) { border-left: 0.25rem solid #AF7AC5; }details:nth-of-type(25) { border-left: 0.25rem solid #F08080; }details:nth-of-type(26) { border-left: 0.25rem solid #48C9B0; }details:nth-of-type(27) { border-left: 0.25rem solid #F4D03F; }details:nth-of-type(28) { border-left: 0.25rem solid #5499C7; }details:nth-of-type(29) { border-left: 0.25rem solid #A04000; }details:nth-of-type(30) { border-left: 0.25rem solid #D2B4DE; }details:nth-of-type(31) { border-left: 0.25rem solid #E9967A; }details:nth-of-type(32) { border-left: 0.25rem solid #424949; }details:nth-of-type(33) { border-left: 0.25rem solid #F7DC6F; }details:nth-of-type(34) { border-left: 0.25rem solid #1C2833; }details:nth-of-type(35) { border-left: 0.25rem solid #C39BD3; }details:nth-of-type(36) { border-left: 0.25rem solid #CD6155; }details:nth-of-type(37) { border-left: 0.25rem solid #17A589; }details:nth-of-type(38) { border-left: 0.25rem solid #F8C471; }details:nth-of-type(39) { border-left: 0.25rem solid #2E86C1; }details:nth-of-type(40) { border-left: 0.25rem solid #943126; }details:nth-of-type(41) { border-left: 0.25rem solid #D7BDE2; }details:nth-of-type(42) { border-left: 0.25rem solid #E59866; }details:nth-of-type(43) { border-left: 0.25rem solid #4A235A; }details:nth-of-type(44) { border-left: 0.25rem solid #F9E79F; }details:nth-of-type(45) { border-left: 0.25rem solid #154360; }details:nth-of-type(46) { border-left: 0.25rem solid #BB8FCE; }details:nth-of-type(47) { border-left: 0.25rem solid #DC7633; }details:nth-of-type(48) { border-left: 0.25rem solid #117A65; }details:nth-of-type(49) { border-left: 0.25rem solid #FAD7A0; }details:nth-of-type(50) { border-left: 0.25rem solid #2874A6; }
+*/
+details {
+  border-left: 0.25rem solid var(--grayF-max);
+}
+
+/* Left Arrow (Details)  */
+details > summary {
+  list-style: none;
+  padding-left: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+details > summary::before {
+  content: "chevron_right";
+  font-family: "Material Symbols Outlined";
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
 }
 
 /* 
- Tables ---------------------------------------------------------------------------- 
+Tables ---------------------------------------------------------------------------- 
 */
 table, th, td {
   padding: 0rem;
@@ -488,7 +514,7 @@ table {
 }
 
 /* 
- Grids ---------------------------------------------------------------------------- 
+Grids ---------------------------------------------------------------------------- 
 */
 /* Col = Columns */
 #gridCol-1fr-1fr,
@@ -521,7 +547,7 @@ table {
 }
 
 /* 
- Images ---------------------------------------------------------------------------- 
+Images ---------------------------------------------------------------------------- 
 */
 #svgs {
   padding: 2rem;
@@ -532,14 +558,18 @@ table {
   border: solid 0.25rem var(--gray2-max);
 }
 
-#img1-100, #img1-90, #img1-75, #img1-50, #img1-25 {
-  margin: 1rem;
-  background-color: var(--gray2-min);
-  border: solid 0.25rem var(--gray2-max);
+#svgs2 {
+  padding: 1rem;
+  margin: 0.5rem;
+  max-width: 80%;
+  margin-right: auto;
 }
 
-#img1-100 {
-  width: 100%;
+#img1-90, #img1-75, #img1-50, #img1-25 {
+  margin: 1rem;
+  padding: 0;
+  background-color: var(--gray2-min);
+  border: solid 0.25rem var(--gray2-max);
 }
 
 #img1-90 {
@@ -559,7 +589,7 @@ table {
 }
 
 /* 
- Image Preview ---------------------------------------------------------------------------- 
+Image Preview ---------------------------------------------------------------------------- 
 */
 #overlay {
   position: fixed;
@@ -581,32 +611,7 @@ table {
 }
 
 /* 
- Theme Switch ---------------------------------------------------------------------------- 
-*/
-#themeToggle::before {
-  content: "";
-  color: var(--n-text);
-}
-
-#themeToggle {
-  color: var(--n-text1);
-  font-weight: bold;
-  background-color: var(--n-menu1-border);
-  padding: 0.25rem;
-  margin: 0.5rem;
-  display: block;
-  text-align: center;
-  border: var(--n-menu1-border) solid 0.25rem;
-}
-
-#themeToggle:hover {
-  transition: 300ms ease-in-out;
-  background-color: var(--n-menu1);
-  cursor: pointer;
-}
-
-/* 
- Headings ---------------------------------------------------------------------------- 
+Headings ---------------------------------------------------------------------------- 
 */
 /* Small devices (0px - 424px) */
 @media (min-width: 0px) {
@@ -726,7 +731,7 @@ table {
 }
 /* 
 
- Scrollbar ---------------------------------------------------------------------------- 
+Scrollbar ---------------------------------------------------------------------------- 
 
 */
 ::-webkit-scrollbar {
