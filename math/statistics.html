@@ -26,15 +26,20 @@
              
             
             <h1>statistics</h1>
+                <details><summary><h2>Types of data</h2></summary><div id="detailsContent">
+                    <img id="svgs" src="media/statistics-1.svg">
+                    <h3>E.g.</h3>
+                    <ul>
+                        <li id="li1">Nominal: Eye color (blue, brown).</li>
+                        <li id="li1">Ordinal: Satisfaction rating (poor, fair, good).</li>
+                        <li id="li1">Discrete: Number of siblings (1, 2, 3).</li>
+                        <li id="li1">Continuous: Height (1.75 meters, 1.82 meters).</li>
+                      </ul>
+                </details>
                 <p>Make sure to put everything into accedning order before doing anything</p>
                 <h2>mean</h2>
                 <p>also known as average.</p>
-                <math>
-                    <mi>average&nbsp;=</mi><mfrac>
-                    <mrow style="margin: 0.25rem;"><mi>sum of all numbers</mi></mrow>
-                    <mrow style="margin: 0.25rem;"><mi>ammount of numbers</mi></mrow>
-                </mfrac></math>
-
+                <div id="mathBox"><p id="mathJax">$$\text{average} = \frac{\text{sum of all numbers}}{\text{amount of numbers}}$$</p></div>
                 <h2>median</h2>
                 <p>after a set of data is sorted into acceding ordeer the median is the number in the middle
                     <br>when the middle is two numbers we find the average between those two numbers.
@@ -48,17 +53,12 @@
 
                 <h2>range</h2>
                 <p>The difference between the largest and smallest number in a set of data</p>
-                <math>
-                    <mi>biggest number&nbsp;&minus;&nbsp;smallest number</mi>
-                </math>
-
+                <div id="mathBox"><p id="mathJax">$$\text{biggest number} - \text{smallest number}$$</p></div>
                 <h2>inter quartile range
                     <br>& standard deviation
                 </h2>
                     <p>Inter Quartile Range = IQR</p>
-                    <math>
-                        <mi>IQR&nbsp;=&nbsp;Q3&nbsp;&minus;&nbsp;Q1</mi>
-                    </math>
+                    <div id="mathBox"><p id="mathJax">$$IQR = Q3 - Q1$$</p></div>
                     <p><b>from smallest to biggest:</b>
                         <br>
                         <br>Minimum  
@@ -92,25 +92,13 @@
                     <br>i dont know its just some number used in higher math</p>
                 <h2>outliers</h2>
                     <p>anything less than:</p>
-                    <math>
-                        <msub>
-                            <mi>Q </mi>
-                            <mi>1</mi>
-                        </msub>
-                        <mi>&minus;&nbsp;1.5&nbsp;&times;&nbsp;</mi><mi>IQR</mi>
-                    </math>
+                    <div id="mathBox"><p id="mathJax">$$Q_1 - 1.5 \times IQR$$</p></div>
                     <br>
                     <p>anything greater than:</p>
-                    <math>
-                        <msub>
-                            <mi>Q </mi>
-                            <mi>3</mi>
-                        </msub>
-                        <mi>&minus;&nbsp;1.5&nbsp;&times;&nbsp;</mi><mi>IQR</mi>
-                    </math>
+                    <div id="mathBox"><p id="mathJax">$$Q_3 - 1.5 \times IQR$$</p></div>
                 
                 <h2>box plots</h2>
         <div id="overlay"><img id="focusedImg" src=""></div>
-        </main>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></main>
     </body>
 </html>

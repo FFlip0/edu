@@ -60,16 +60,15 @@
                         <img id="svgs" src="media/probability/FIG4.svg">
                         <p>Theres a lot more examples but these are the fundementals,<br>im quite lazy and making these arent easy.</p>
                         <p>Try making the following by yourself:</p>
-                        <div id="mathBox"><math><mi>B</mi></math></div> 
-                        <div id="mathBox"><math><mi>B′</mi></math></div> 
-                        <div id="mathBox"><math><mi>A ∪ B′</mi></math></div> 
-                        <div id="mathBox"><math><mi>A′ ∪ B</mi></math></div> 
-                        <div id="mathBox"><math><mi>(A ∪ B)′</mi></math></div> 
-                        <div id="mathBox"><math><mi>A′ ∩ B</mi></math></div> 
-                        <div id="mathBox"><math><mi>A ∩ B′</mi></math></div> 
-                        <div id="mathBox"><math><mi>(A ∩ B)′</mi></math></div> 
-                        <div id="mathBox"><math><mi>A′ ∩ B′</mi></math></div>
-                
+                        <div id="mathBox"><p id="mathJax">$$B$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$B'$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$A \cup B'$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$A' \cup B$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$(A \cup B)'$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$A' \cap B$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$A \cap B'$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$(A \cap B)'$$</p></div>
+                        <div id="mathBox"><p id="mathJax">$$A' \cap B'$$</p></div>
 
                 <h3>mutually exclusive events</h3>
                 <p>These are sets that do not have any elements in common.
@@ -88,10 +87,9 @@
             <p>P(A) = 0.7,&nbsp;&nbsp;&nbsp; P(B) = 0.5,&nbsp;&nbsp;&nbsp; P(A &cap; B) = 0.4
                 <br>Find P(A &cup; B)</p>
                 <h4>answer</h4>
-                <div id="mathBox"></div><math><mi>P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</mi></math>
-                <div id="mathBox"></div><math><mi>P(A ∪ B) = 0.7 + 0.5 − 0.4</mi></math>
-                <div id="mathBox"></div><math><mi>P(A ∪ B) = 0.8</mi></math>
-            
+                <div id="mathBox"><p id="mathJax">$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$</p></div>
+                <div id="mathBox"><p id="mathJax">$$P(A \cup B) = 0.7 + 0.5 - 0.4$$</p></div>
+                <div id="mathBox"><p id="mathJax">$$P(A \cup B) = 0.8$$</p></div>
             </div>
 
 
@@ -100,17 +98,16 @@
             <p>P(A) = 0.4,&nbsp;&nbsp;&nbsp; P(B) = 0.5,&nbsp;&nbsp;&nbsp; P(A &cap; B) = 0.85
             </p>
             <p>I) Find P(A &cap; B)</p>
-                <h4>answer</h4>
-                <div id="mathBox"><math><mi>P(A ∩ B) = P(A) + P(B) − P(A ∪ B)</mi></math></div> 
-                <div id="mathBox"><math><mi>P(A ∩ B) = 0.4 + 0.8 − 0.85</mi></math></div> 
-                <div id="mathBox"><math><mi>P(A ∩ B) = 0.35</mi></math></div>
-
-            <p>Ii) Find P(A` &cap; B`)</p>
-                <h4>answer</h4>
-                <div id="mathBox"><math><mi>P(A′ ∩ B′) = 1 − P(A ∪ B)</mi></math></div> 
-                <div id="mathBox"><math><mi>P(A′ ∩ B′) = 1 − 0.85</mi></math></div> 
-                <div id="mathBox"><math><mi>P(A′ ∩ B′) = 0.15</mi></math></div>
+            <h4>answer</h4>
+            <div id="mathBox"><p id="mathJax">$$P(A \cap B) = P(A) + P(B) - P(A \cup B)$$</p></div>
+            <div id="mathBox"><p id="mathJax">$$P(A \cap B) = 0.4 + 0.8 - 0.85$$</p></div>
+            <div id="mathBox"><p id="mathJax">$$P(A \cap B) = 0.35$$</p></div>
             
+            <p>Ii) Find P(A` &cap; B`)</p>
+            <h4>answer</h4>
+            <div id="mathBox"><p id="mathJax">$$P(A' \cap B') = 1 - P(A \cup B)$$</p></div>
+            <div id="mathBox"><p id="mathJax">$$P(A' \cap B') = 1 - 0.85$$</p></div>
+            <div id="mathBox"><p id="mathJax">$$P(A' \cap B') = 0.15$$</p></div>
             </div>
 
 
@@ -120,6 +117,6 @@
 
             </div>
         <div id="overlay"><img id="focusedImg" src=""></div>
-        </main>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></main>
     </body>
 </html>
