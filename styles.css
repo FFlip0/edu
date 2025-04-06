@@ -135,22 +135,22 @@ body {
   vertical-align: middle;
 }
 
-#Box1, #Box2, #Box3 {
+#Box0, #Box1, #Box2 {
   padding: 0.5rem;
   margin: 1rem;
 }
 
-#Box1 {
+#Box0 {
   background-color: var(--gray1-min);
   border: solid 0.25rem var(--gray1-max);
 }
 
-#Box2 {
+#Box1 {
   background-color: var(--gray2-min);
   border: solid 0.25rem var(--gray2-max);
 }
 
-#Box3 {
+#Box2 {
   background-color: var(--gray3-min);
   border: solid 0.25rem var(--gray3-max);
 }
@@ -384,38 +384,34 @@ a:hover::before {
 }
 
 /* 
-Mobile-back, Dir-search ---------------------------------------------------------------------------- 
+dir2, dir1 ---------------------------------------------------------------------------- 
 */
-#mobile-back {
+#dir2 {
   font-weight: bold;
   font-style: normal;
   margin-left: 1rem;
 }
 
-#dir-search {
-  display: inline-block;
+#dir1 {
+  padding: 0;
   margin: 0.5rem;
+}
+
+#dir1-box {
+  border-bottom: var(--n-text) solid 0.25rem;
+  padding: 0rem;
+  margin: 0rem;
   font-weight: bold;
   font-style: normal;
 }
 
-#dir-search-box {
-  border-bottom: var(--n-text) solid 0.25rem;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
-#dir-search-box:hover {
-  cursor: default;
-}
-
 @media (max-width: 1024px) {
-  #dir-search-box {
+  #dir1-box {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  #mobile-back {
+  #dir2 {
     display: none;
   }
 }

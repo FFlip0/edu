@@ -82,24 +82,24 @@ main {padding: 3rem;}
 
 
 
-@mixin Box1 {
+@mixin Box0 {
 background-color:       var(--gray1-min);
 border: solid 0.25rem   var(--gray1-max) ;
-}@mixin Box2 {
+}@mixin Box1 {
 background-color:       var(--gray2-min);
 border: solid 0.25rem   var(--gray2-max);
-}@mixin Box3 {
+}@mixin Box2 {
 background-color:       var(--gray3-min);
 border: solid 0.25rem   var(--gray3-max);
 }
 
 
-#Box1, #Box2, #Box3 {
+#Box0, #Box1, #Box2 {
     padding: 0.5rem;
     margin: 1rem;
-}#Box1 {@include Box1();}
+}#Box0 {@include Box0();}
+#Box1 {@include Box1();}
 #Box2 {@include Box2();}
-#Box3 {@include Box3();}
 
 
 
@@ -145,7 +145,7 @@ code {
     background-color: var(--n-code-bg);
     display: block;
     font-family: "Space Mono", sans-serif;
-    @include Box1();
+    @include Box0();
     padding: 0.5rem;
 }
 
@@ -312,28 +312,27 @@ a { font-weight: bold;
 
 
 /* 
-Mobile-back, Dir-search ---------------------------------------------------------------------------- 
+dir2, dir1 ---------------------------------------------------------------------------- 
 */
 
-#mobile-back {
+#dir2 {
 font-weight: bold;
 font-style: normal;
 margin-left: 1rem;
 }
-#dir-search {
-display: inline-block;
-margin: 0.5rem;
+#dir1 {
+    padding: 0;
+    margin: 0.5rem;
+}
+#dir1-box {
+border-bottom: var(--n-text) solid 0.25rem;
+padding: 0rem;
+margin: 0rem;
 font-weight: bold;
 font-style: normal;
-}#dir-search-box {
-border-bottom: var(--n-text) solid 0.25rem;
-padding: 0.5rem;
-margin: 1rem;
-}#dir-search-box:hover {
-cursor: default;
 }
-@media (max-width: 1024px) {#dir-search-box {display: none;}}
-@media (min-width: 1024px) {#mobile-back    {display: none;}}
+@media (max-width: 1024px) {#dir1-box {display: none;}}
+@media (min-width: 1024px) {#dir2    {display: none;}}
 
 
 
@@ -362,7 +361,7 @@ details {
     border-radius: 0rem
 }
 summary {
-    @include Box2();
+    @include Box1();
     cursor: pointer;
     border-radius: 0rem;
 }summary:hover {
@@ -475,7 +474,7 @@ padding: 2rem;
 margin: 1rem;
 max-width: 80%;  
 margin-right: auto;
-@include Box2();
+@include Box1();
 }#svgs2 {
 padding: 1rem;
 margin: 0.5rem;
@@ -484,7 +483,7 @@ margin-right: auto;
 }#img1-90, #img1-75, #img1-50, #img1-25 {
     margin: 1rem;
     padding: 0;
-    @include Box2();
+    @include Box1();
 }#img1-90 {width: 90%;}
 #img1-75 {width: 75%;}
 #img1-50 {width: 50%;}
