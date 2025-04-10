@@ -1,0 +1,22 @@
+@import "_misc.scss";
+::-webkit-scrollbar {
+    width: 1.5rem;
+    height: 1.5em;
+    border-radius: 100vw;
+}::-webkit-scrollbar-track {
+    margin: 0;
+    background: var(--n-bg);
+    border: var(--n-menu1) 0.25rem solid;
+}::-webkit-scrollbar-thumb {
+    margin: 0;
+    background: var(--n-menu1);
+    border: var(--n-bg) 0.25rem solid;
+}
+
+@media (max-width: 1023px) {
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+}
+

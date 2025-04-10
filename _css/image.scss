@@ -1,0 +1,25 @@
+@import "_misc.scss";
+
+#svgs {
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 80%;  
+    margin-right: auto;
+    @include Box1();
+    }#svgs2 {
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 80%;  
+    margin-right: auto;
+    }#img1-90, #img1-75, #img1-50, #img1-25 {
+        margin: 1rem;
+        padding: 0;
+        @include Box1();
+    }#img1-90 {width: 90%;}
+    #img1-75 {width: 75%;}
+    #img1-50 {width: 50%;}
+    #img1-25 {width: 25%;}
+    
+    
+    
+    

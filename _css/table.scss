@@ -1,0 +1,20 @@
+@import "_misc.scss";
+
+table, th, td {
+    padding: 0rem;
+    margin: 1rem;
+    cursor: default;
+}
+tr, td, th {
+    border: var(--n-table) solid 0.1rem;
+    padding: 0.5rem;
+    text-align: center;
+}th {
+    background-color: var(--n-table);
+    color: var(--n-text);
+    border: solid 0.1em var(--n-table);
+}
+table {
+    border: var(--n-table) solid 0.15rem;
+    display: inline-block;
+}

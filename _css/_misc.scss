@@ -1,0 +1,52 @@
+:root {
+    --blue: #0000ff;
+    --green: #00ff00;
+    --yellow: #ffff00;
+    --magenta: #ff00ff;
+    --light-blue: #00ffff;
+    
+    /* Notion Dark */
+    --n-bg: #191919;     
+    --n-link: #9c9c9c;    
+    --n-text: #d4d4d4;   
+    --n-table: #2f2f2f;  
+    --n-menu0-hover: #262626;
+    --n-menu1: #252525;
+    --n-menu1-border: #303030; 
+    --n-menu1-hover: #313131;
+    --n-code-bg: #202020;
+    
+    --black: #000000;
+    --gray: #808080; /* Exact between #000000 and #ffffff */
+    --white: #ffffff;
+    
+    --gray0-min: #000000; --gray0-Q1: #030303; --gray0-Q2: #070707; --gray0-Q3: #0d0d0d; --gray0-max: #0f0f0f;
+    --gray1-min: #111111; --gray1-Q1: #131313; --gray1-Q2: #171717; --gray1-Q3: #1d1d1d; --gray1-max: #1f1f1f;
+    --gray2-min: #212121; --gray2-Q1: #232323; --gray2-Q2: #272727; --gray2-Q3: #2d2d2d; --gray2-max: #2f2f2f;
+    --gray3-min: #313131; --gray3-Q1: #333333; --gray3-Q2: #373737; --gray3-Q3: #3d3d3d; --gray3-max: #3f3f3f;
+    --gray4-min: #414141; --gray4-Q1: #434343; --gray4-Q2: #474747; --gray4-Q3: #4d4d4d; --gray4-max: #4f4f4f;
+    --gray5-min: #515151; --gray5-Q1: #535353; --gray5-Q2: #575757; --gray5-Q3: #5d5d5d; --gray5-max: #5f5f5f;
+    --gray6-min: #616161; --gray6-Q1: #636363; --gray6-Q2: #676767; --gray6-Q3: #6d6d6d; --gray6-max: #6f6f6f;
+    --gray7-min: #717171; --gray7-Q1: #737373; --gray7-Q2: #777777; --gray7-Q3: #7d7d7d; --gray7-max: #7f7f7f;
+    --gray8-min: #818181; --gray8-Q1: #838383; --gray8-Q2: #878787; --gray8-Q3: #8d8d8d; --gray8-max: #8f8f8f;
+    --gray9-min: #919191; --gray9-Q1: #939393; --gray9-Q2: #979797; --gray9-Q3: #9d9d9d; --gray9-max: #9f9f9f;
+    --grayA-min: #a1a1a1; --grayA-Q1: #a3a3a3; --grayA-Q2: #a7a7a7; --grayA-Q3: #adadad; --grayA-max: #afafaf;
+    --grayB-min: #b1b1b1; --grayB-Q1: #b3b3b3; --grayB-Q2: #b7b7b7; --grayB-Q3: #bdbdbd; --grayB-max: #bfbfbf;
+    --grayC-min: #c1c1c1; --grayC-Q1: #c3c3c3; --grayC-Q2: #c7c7c7; --grayC-Q3: #cdcdcd; --grayC-max: #cfcfcf;
+    --grayD-min: #d1d1d1; --grayD-Q1: #d3d3d3; --grayD-Q2: #d7d7d7; --grayD-Q3: #dddddd; --grayD-max: #dfdfdf;
+    --grayE-min: #e1e1e1; --grayE-Q1: #e3e3e3; --grayE-Q2: #e7e7e7; --grayE-Q3: #ededed; --grayE-max: #efefef;
+    --grayF-min: #f1f1f1; --grayF-Q1: #f3f3f3; --grayF-Q2: #f7f7f7; --grayF-Q3: #fdfdfd; --grayF-max: #ffffff;
+    }
+
+    
+@mixin Box0 {
+    background-color:       var(--gray1-min);
+    border: solid 0.25rem   var(--gray1-max) ;
+    }@mixin Box1 {
+    background-color:       var(--gray2-min);
+    border: solid 0.25rem   var(--gray2-max);
+    }@mixin Box2 {
+    background-color:       var(--gray3-min);
+    border: solid 0.25rem   var(--gray3-max);
+    }
+    
