@@ -1,13 +1,14 @@
-@import "_css/_misc.scss"; //applys to all
-@import "_css/dir.scss";
-@import "_css/image.scss";
-@import "_css/imagePreview.scss";
-@import "_css/reset.scss";
-@import "_css/scrollbar.scss";
-@import "_css/table.scss";
-@import "_css/text.scss";
-@import "_css/textSizes.scss";
-@import "_css/toggleHeadings.scss";
+@use "_css/_misc.scss"; //applys to all
+@use "_css/_mixins.scss" as m;
+@use "_css/_reset.scss";
+@use "_css/dir.scss";
+@use "_css/image.scss";
+@use "_css/imagePreview.scss";
+@use "_css/scrollbar.scss";
+@use "_css/table.scss";
+@use "_css/text.scss";
+@use "_css/textSizes.scss";
+@use "_css/toggleHeadings.scss";
 
 
 /* Font: Space Mono                    */ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -52,9 +53,9 @@ main {padding: 3rem;}
 #Box0, #Box1, #Box2 {
     padding: 0.5rem;
     margin: 1rem;
-}#Box0 {@include Box0();}
-#Box1 {@include Box1();}
-#Box2 {@include Box2();}
+}#Box0 {@include m.Box0();}
+#Box1 {@include m.Box1();}
+#Box2 {@include m.Box2();}
 
 p, i, li, a {
     display: inline-block;

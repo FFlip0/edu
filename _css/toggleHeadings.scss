@@ -1,4 +1,5 @@
-@import "_misc.scss";
+@use "_misc.scss";
+@use "_mixins.scss" as m;
 
 
 details {
@@ -9,7 +10,7 @@ details {
     border-radius: 0rem
 }
 summary {
-    @include Box1();
+    @include m.Box1();
     cursor: pointer;
     border-radius: 0rem;
 }summary:hover {

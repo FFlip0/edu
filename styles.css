@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/* Font: Space Mono                    */
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* Font: Ubuntu                        */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* Icon: Material Symbols Outlined     */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 :root {
   --blue: #0000ff;
@@ -103,396 +106,6 @@
   --grayF-max: #ffffff;
 }
 
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
-#dir2 {
-  font-weight: bold;
-  font-style: normal;
-  margin-left: 1rem;
-}
-
-#dir1 {
-  padding: 0;
-  margin: 0.5rem;
-}
-
-#dir1-box {
-  border-bottom: var(--n-text) solid 0.25rem;
-  padding: 0rem;
-  margin: 0rem;
-  font-weight: bold;
-  font-style: normal;
-}
-
-@media (max-width: 1024px) {
-  #dir1-box {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  #dir2 {
-    display: none;
-  }
-}
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
-#svgs {
-  padding: 2rem;
-  margin: 1rem;
-  max-width: 80%;
-  margin-right: auto;
-  background-color: var(--gray2-min);
-  border: solid 0.25rem var(--gray2-max);
-}
-
-#svgs2 {
-  padding: 1rem;
-  margin: 0.5rem;
-  max-width: 80%;
-  margin-right: auto;
-}
-
-#img1-90, #img1-75, #img1-50, #img1-25 {
-  margin: 1rem;
-  padding: 0;
-  background-color: var(--gray2-min);
-  border: solid 0.25rem var(--gray2-max);
-}
-
-#img1-90 {
-  width: 90%;
-}
-
-#img1-75 {
-  width: 75%;
-}
-
-#img1-50 {
-  width: 50%;
-}
-
-#img1-25 {
-  width: 25%;
-}
-
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-#overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  transition: transform 0.3s ease;
-}
-
 scss html,
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -544,105 +157,91 @@ table {
   border-spacing: 0;
 }
 
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
+#dir2 {
+  font-weight: bold;
+  font-style: normal;
+  margin-left: 1rem;
+}
+
+#dir1 {
+  padding: 0;
+  margin: 0.5rem;
+}
+
+#dir1-box {
+  border-bottom: var(--n-text) solid 0.25rem;
+  padding: 0rem;
+  margin: 0rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@media (max-width: 1024px) {
+  #dir1-box {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  #dir2 {
+    display: none;
+  }
+}
+#svgs {
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 80%;
+  margin-right: auto;
+  background-color: var(--gray2-min);
+  border: solid 0.25rem var(--gray2-max);
+}
+
+#svgs2 {
+  padding: 1rem;
+  margin: 0.5rem;
+  max-width: 80%;
+  margin-right: auto;
+}
+
+#img1-90, #img1-75, #img1-50, #img1-25 {
+  margin: 1rem;
+  padding: 0;
+  background-color: var(--gray2-min);
+  border: solid 0.25rem var(--gray2-max);
+}
+
+#img1-90 {
+  width: 90%;
+}
+
+#img1-75 {
+  width: 75%;
+}
+
+#img1-50 {
+  width: 50%;
+}
+
+#img1-25 {
+  width: 25%;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  transition: transform 0.3s ease;
 }
 
 ::-webkit-scrollbar {
@@ -669,107 +268,6 @@ table {
     height: 0;
   }
 }
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
 table, th, td {
   padding: 0rem;
   margin: 1rem;
@@ -791,107 +289,6 @@ th {
 table {
   border: var(--n-table) solid 0.15rem;
   display: inline-block;
-}
-
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
 }
 
 /* Heading(s) */
@@ -1056,107 +453,6 @@ a:hover::before {
   opacity: 0.5;
 }
 
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
 /* Small devices (0px - 424px) */
 @media (min-width: 0px) {
   h1 {
@@ -1273,107 +569,6 @@ a:hover::before {
     font-size: 2rem;
   }
 }
-:root {
-  --blue: #0000ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --magenta: #ff00ff;
-  --light-blue: #00ffff;
-  /* Notion Dark */
-  --n-bg: #191919;
-  --n-link: #9c9c9c;
-  --n-text: #d4d4d4;
-  --n-table: #2f2f2f;
-  --n-menu0-hover: #262626;
-  --n-menu1: #252525;
-  --n-menu1-border: #303030;
-  --n-menu1-hover: #313131;
-  --n-code-bg: #202020;
-  --black: #000000;
-  --gray: #808080; /* Exact between #000000 and #ffffff */
-  --white: #ffffff;
-  --gray0-min: #000000;
-  --gray0-Q1: #030303;
-  --gray0-Q2: #070707;
-  --gray0-Q3: #0d0d0d;
-  --gray0-max: #0f0f0f;
-  --gray1-min: #111111;
-  --gray1-Q1: #131313;
-  --gray1-Q2: #171717;
-  --gray1-Q3: #1d1d1d;
-  --gray1-max: #1f1f1f;
-  --gray2-min: #212121;
-  --gray2-Q1: #232323;
-  --gray2-Q2: #272727;
-  --gray2-Q3: #2d2d2d;
-  --gray2-max: #2f2f2f;
-  --gray3-min: #313131;
-  --gray3-Q1: #333333;
-  --gray3-Q2: #373737;
-  --gray3-Q3: #3d3d3d;
-  --gray3-max: #3f3f3f;
-  --gray4-min: #414141;
-  --gray4-Q1: #434343;
-  --gray4-Q2: #474747;
-  --gray4-Q3: #4d4d4d;
-  --gray4-max: #4f4f4f;
-  --gray5-min: #515151;
-  --gray5-Q1: #535353;
-  --gray5-Q2: #575757;
-  --gray5-Q3: #5d5d5d;
-  --gray5-max: #5f5f5f;
-  --gray6-min: #616161;
-  --gray6-Q1: #636363;
-  --gray6-Q2: #676767;
-  --gray6-Q3: #6d6d6d;
-  --gray6-max: #6f6f6f;
-  --gray7-min: #717171;
-  --gray7-Q1: #737373;
-  --gray7-Q2: #777777;
-  --gray7-Q3: #7d7d7d;
-  --gray7-max: #7f7f7f;
-  --gray8-min: #818181;
-  --gray8-Q1: #838383;
-  --gray8-Q2: #878787;
-  --gray8-Q3: #8d8d8d;
-  --gray8-max: #8f8f8f;
-  --gray9-min: #919191;
-  --gray9-Q1: #939393;
-  --gray9-Q2: #979797;
-  --gray9-Q3: #9d9d9d;
-  --gray9-max: #9f9f9f;
-  --grayA-min: #a1a1a1;
-  --grayA-Q1: #a3a3a3;
-  --grayA-Q2: #a7a7a7;
-  --grayA-Q3: #adadad;
-  --grayA-max: #afafaf;
-  --grayB-min: #b1b1b1;
-  --grayB-Q1: #b3b3b3;
-  --grayB-Q2: #b7b7b7;
-  --grayB-Q3: #bdbdbd;
-  --grayB-max: #bfbfbf;
-  --grayC-min: #c1c1c1;
-  --grayC-Q1: #c3c3c3;
-  --grayC-Q2: #c7c7c7;
-  --grayC-Q3: #cdcdcd;
-  --grayC-max: #cfcfcf;
-  --grayD-min: #d1d1d1;
-  --grayD-Q1: #d3d3d3;
-  --grayD-Q2: #d7d7d7;
-  --grayD-Q3: #dddddd;
-  --grayD-max: #dfdfdf;
-  --grayE-min: #e1e1e1;
-  --grayE-Q1: #e3e3e3;
-  --grayE-Q2: #e7e7e7;
-  --grayE-Q3: #ededed;
-  --grayE-max: #efefef;
-  --grayF-min: #f1f1f1;
-  --grayF-Q1: #f3f3f3;
-  --grayF-Q2: #f7f7f7;
-  --grayF-Q3: #fdfdfd;
-  --grayF-max: #ffffff;
-}
-
 details {
   cursor: pointer;
   border-left: var(--grayF-max) solid 0.25rem;
@@ -1428,9 +623,6 @@ details[open] > summary::before {
   transform: rotate(90deg);
 }
 
-/* Font: Space Mono                    */
-/* Font: Ubuntu                        */
-/* Icon: Material Symbols Outlined     */
 /* 
 min: #000000   
 Q1: #030303

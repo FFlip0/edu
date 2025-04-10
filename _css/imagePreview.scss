@@ -1,4 +1,6 @@
-@import "_misc.scss";
+@use "_misc.scss";
+@use "_mixins.scss" as m;
+
 #overlay {
     position: fixed;
     top: 0;
