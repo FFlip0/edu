@@ -1,5 +1,19 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
+@use '_all.scss' as *;
+
+#Box0, #Box1, #Box2 {
+    padding: 0.5rem;
+    margin: 1rem;
+}#Box0 {@include Box0();}
+#Box1 {@include Box1();}
+#Box2 {@include Box2();}
+
+
+p, i, li, a {
+    display: inline-block;
+}
+
+
+
 
 /* Heading(s) */
 h1, h2, h3, h4, h5, h6 {font-weight: 600;}
@@ -25,7 +39,7 @@ code {
     background-color: var(--n-code-bg);
     display: block;
     font-family: "Space Mono", sans-serif;
-    @include m.Box0();
+    @include Box0();
     padding: 0.5rem;
 }
 
@@ -56,6 +70,8 @@ li {display: block;}
     color: var(--gray);
     display: inline-block;
     padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;
+}#m-p1 /* for math (mathjax)*/ {
+    margin: 0;
 }
 
 
@@ -101,4 +117,158 @@ a { font-weight: bold;
 }
 #a2-hidden {opacity: 0;}
 #a2-hidden:hover {opacity: 0.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "Horizontal Rule(s)" */
+#hr1, #hr2, #hr3 {
+    margin: 0.5rem;
+    display: block;
+}
+#hr1 {border: var(--gray) dashed 0.1rem;}
+#hr2 {border: var(--gray) solid 0.1rem;}
+#hr3 {border: var(--gray) solid 0.25rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* border1 is block */
+/* border2 is inline*/
+/* border3 is a red version of border1 */
+#border1, #border2, #border3 {
+    border: var(--gray) dashed 0.1rem;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    display: block;
+}#border2 {
+    display: inline-block;
+}#border3 {
+    border: #ff0000 dashed 0.1rem;
+    background-color: #ff000025;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Tables ---------------------------------------------------------------------------- 
+*/
+table, th, td {
+    padding: 0rem;
+    margin: 1rem;
+    cursor: default;
+}
+tr, td, th {
+    border: var(--n-table) solid 0.1rem;
+    padding: 0.5rem;
+    text-align: center;
+}th {
+    background-color: var(--n-table);
+    color: var(--n-text);
+    border: solid 0.1em var(--n-table);
+}
+table {
+    border: var(--n-table) solid 0.15rem;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+Grids ---------------------------------------------------------------------------- 
+*/
+/* Col = Columns */
+#gridCol-1fr-1fr, 
+#gridCol-1fr-2fr,
+#gridCol-2fr-1fr,
+#gridCol-1fr-3fr,
+#gridCol-3fr-1fr {
+    display: grid; 
+    gap: 1rem;
+}
+#gridCol-1fr-1fr {grid-template-columns: 1fr 1fr;}
+#gridCol-1fr-2fr {grid-template-columns: 1fr 2fr;}
+#gridCol-2fr-1fr {grid-template-columns: 2fr 1fr;}
+#gridCol-1fr-3fr {grid-template-columns: 1fr 3fr;}
+#gridCol-3fr-1fr {grid-template-columns: 3fr 1fr;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

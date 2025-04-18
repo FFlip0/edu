@@ -1,5 +1,5 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
+@use '_all.scss' as *;
+
 
 #overlay {
     position: fixed;
@@ -17,8 +17,6 @@
         max-height: 90%;
         transition: transform 0.3s ease;
 }
-
-
 
 
 

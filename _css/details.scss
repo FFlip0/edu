@@ -1,6 +1,4 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
-
+@use '_all.scss' as *;
 
 details {
     cursor: pointer;
@@ -10,7 +8,7 @@ details {
     border-radius: 0rem
 }
 summary {
-    @include m.Box1();
+    @include Box1();
     cursor: pointer;
     border-radius: 0rem;
 }summary:hover {
@@ -52,5 +50,3 @@ details > summary {
 }details[open] > summary::before { 
     transform: rotate(90deg);
 }
-
-

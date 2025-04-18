@@ -1,6 +1,4 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
-
+@use '_all.scss' as *;
 /* Small devices (0px - 424px) */
 @media (min-width: 0px) {
     h1 { font-size: 2rem; }
@@ -52,3 +50,5 @@
     /* Only for 1024px and up */ 
     math {font-size: 2rem;}
 }
+
+

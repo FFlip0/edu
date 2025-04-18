@@ -1,5 +1,4 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
+@use '_all.scss' as *;
 ::-webkit-scrollbar {
     width: 1.5rem;
     height: 1.5em;
@@ -20,4 +19,3 @@
     height: 0;
 }
 }
-

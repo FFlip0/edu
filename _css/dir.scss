@@ -1,6 +1,4 @@
-@use "_misc.scss";
-@use "_mixins.scss" as m;
-
+@use '_all.scss' as *;
 #dir2 {
     font-weight: bold;
     font-style: normal;
@@ -19,4 +17,5 @@
     }
     @media (max-width: 1024px) {#dir1-box {display: none;}}
     @media (min-width: 1024px) {#dir2    {display: none;}}
+    
     
